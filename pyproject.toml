@@ -1,5 +1,5 @@
 [build-system]
-requires = ["psycodict", "psycopg2-binary>=2.7"]
+requires = ["psycodict"]
 build-backend = "setuptools.build_meta"
 
 [project]
