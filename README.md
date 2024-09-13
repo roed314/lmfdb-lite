@@ -70,7 +70,7 @@ If you want many random objects, `random_sample` can be more efficient (differen
 >>> from collections import Counter
 >>> Counter(db.gps_groups.random_sample(0.01, {"order": 256}, "nilpotency_class"))
 Counter({2: 325, 3: 236, 4: 18, 5: 4, 6: 2})
-sage: Counter(db.gps_groups.search({"order": 256}, "nilpotency_class"))
+>>> Counter(db.gps_groups.search({"order": 256}, "nilpotency_class"))
 Counter({1: 22, 2: 31742, 3: 21325, 4: 2642, 5: 320, 6: 38, 7: 3})
 ```
 
