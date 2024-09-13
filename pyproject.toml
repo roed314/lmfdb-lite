@@ -1,5 +1,5 @@
 [build-system]
-requires = ["psycodict"]
+requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -15,6 +15,6 @@ homepage = "https://github.com/roed314/lmfdb-lite"
 repository = "https://github.com/roed314/lmfdb-lite"
 
 [project.optional-dependencies]
-pgsource = ["psycopg2>=2.7"]
-pgbinary = ["psycopg2-binary>=2.7"]
+pgsource = ["psycodict @ git+https://github.com/roed314/psycodict.git#egg=psycodict[pgsource]"]
+pgbinary = ["psycodict @ git+https://github.com/roed314/psycodict.git#egg=psycodict[pgbinary]"]
 
