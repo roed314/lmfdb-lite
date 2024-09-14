@@ -15,5 +15,5 @@ homepage = "https://github.com/roed314/lmfdb-lite"
 repository = "https://github.com/roed314/lmfdb-lite"
 
 [project.optional-dependencies]
-pgsource = ["psycodict @ git+https://github.com/roed314/psycodict.git#egg=project[pgsource]"]
-pgbinary = ["psycodict @ git+https://github.com/roed314/psycodict.git#egg=project[pgbinary]"]
+pgsource = ["psycodict[pgsource] @ git+https://github.com/roed314/psycodict.git"]
+pgbinary = ["psycodict[pgbinary] @ git+https://github.com/roed314/psycodict.git"]
