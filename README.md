@@ -5,11 +5,11 @@ dictionary-based python interface to the L-functions and modular forms database 
 
 Choose one of the following options (`pgsource` has additional requirements such as a C compiler and Python and libpq header files; see [here](https://www.psycopg.org/docs/install.html#psycopg-vs-psycopg-binary) for more details):
 ```
-pip3 install -U git+https://github.com/roed314/lmfdb-lite.git#egg=project[pgbinary]
+pip3 install -U "lmfdb-lite[pgbinary] @ git+https://github.com/roed314/lmfdb-lite.git"
 ```
 or
 ```
-pip3 install -U git+https://github.com/roed314/lmfdb-lite.git#egg=project[pgsource]
+pip3 install -U "lmfdb-lite[pgsource] @ git+https://github.com/roed314/lmfdb-lite.git"
 ```
 
 ## Usage
