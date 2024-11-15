@@ -1,5 +1,6 @@
 # lmfdb-lite
-dictionary-based python interface to the L-functions and modular forms database (lmdfb.org)
+
+A Python interface to the L-functions and modular forms database (lmdfb.org).  It uses the [psycodict](https://github.com/roed314/psycodict) library, which provides a dictionary-based approach to interacting with SQL databases and is in turn built upon [psycopg2](https://www.psycopg.org/docs/).
 
 ## Install
 
@@ -104,11 +105,11 @@ Basic statistical quantities are available through built-in functions; of course
 
 ### Queries
 
-Summary of how to construct query dictionaries to be added soon.
+Many methods (most notably `search` and `lucky`) take dictionaries that specify the WHERE clause in an SQL query, determining which rows of the table are returned.  The query language used in these dictionaries does not allow for arbitrary criteria, but instead a more limited set of clauses tailored to support the LMFDB's search webpages.  See the [query language specification](https://github.com/roed314/psycodict/blob/master/QueryLanguage.md) for more details.
 
 ### Using SQL directly
 
-You can run your own SQL commands directly using the underlying psycopg2 engine.
+You can run your own SQL commands directly using the underlying [psycopg2](https://www.psycopg.org/docs/) engine.  This can be useful if you want to run queries that are not possible with the query language (e.g. joins, or comparing different columns in the same table).
 
 ```python
 >>> from psycopg2.sql import SQL, Identifier
