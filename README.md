@@ -1,6 +1,6 @@
 # lmfdb-lite
 
-A Python interface to the L-functions and modular forms database (lmdfb.org).  It uses the [psycodict](https://github.com/roed314/psycodict) library, which provides a dictionary-based approach to interacting with SQL databases and is in turn built upon [psycopg2](https://www.psycopg.org/docs/).
+A Python interface to the L-functions and modular forms database (lmfdb.org).  It uses the [psycodict](https://github.com/roed314/psycodict) library, which provides a dictionary-based approach to interacting with SQL databases and is in turn built upon [psycopg2](https://www.psycopg.org/docs/).
 
 ## Install
 

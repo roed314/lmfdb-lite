@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "lmfdb-lite"
 version = "0.1"
-description = "dictionary-based python interface to the L-functions and modular forms database (lmdfb.org)"
+description = "dictionary-based python interface to the L-functions and modular forms database (lmfdb.org)"
 authors = [{name = "David Roe", email = "roed.math@gmail.com"}, {name = "Edgar Costa", email = "edgarc@mit.edu"}]
 license = {text = "GPL v2+"}
 keywords = ["postgres", "database", "interface", "number theory", "L-function", "modular form", "elliptic curve", "genus 2 curve", "modular curve", "abelian variety", "Belyi", "number field", "p-adic", "Dirichlet character", "Artin representation", "hypergeometric motive", "Galois group", "Sato-Tate group", "finite group", "lattice"]
